@@ -1,0 +1,96 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+
+Enum user_roles {
+  user
+  administrator
+  expert
+  moderator
+}
+
+Enum expertises{
+  veterinarian
+  trainer
+  groomer
+}
+
+Enum article_type{
+  tips
+  guide
+  blog
+}
+
+Table users {
+  user_id integer [primary key]
+  username varchar [unique]
+  first_name varchar(255)
+  last_name varchar
+  password varchar
+  location varchar
+  role user_roles
+  biography text
+  created_at timestamp
+}
+
+Table experts {
+  expert_id integer [primary key]
+  user_id integer [ref: - users.user_id]
+  expertise expertises
+}
+
+Table shelters {
+  shelter_id integer [primary key]
+  owner varchar [ref: - experts.expert_id]
+  name varchar
+  location varchar
+  description text
+  email varchar
+  phone varchar
+  website varchar
+  open_hours time
+  close_hours time
+}
+
+
+Table posts {
+  post_id integer [primary key]
+  title varchar
+  body text [note: 'Content of the post']
+  user_id integer [ref: > users.user_id]
+  status varchar
+  upvotes integer
+  downvotes integer
+  created_at timestamp
+}
+
+Table comments {
+  comment_id integer [primary key]
+  post_id integer [ref: > posts.post_id]
+  user_id integer [ref: > users.user_id]
+  content text
+  likes integer
+  created_at timestamp
+}
+
+Table articles{
+  article_id integer [primary key]
+  expert_id integer [ref: > experts.expert_id]
+  content text
+  article_type article_type
+  created_at timestamp
+}
+
+Table favorites{
+  favorite_id integer [primary key]
+  user_id integer [ref: > users.user_id]
+  post_id integer [ref: > posts.post_id]
+  created_at timestamp
+}
+
+Table featured_articles{
+  featured_post_id integer [primary key]
+  article_id integer [ref: > articles.article_id]
+  featured_at timestamp
+}
+
