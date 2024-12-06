@@ -1,0 +1,192 @@
+.background-image {
+  width: 576px;
+  height: 1024px;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
+#box {
+  height: 572.55px;
+  width: 487.9px;
+  display: inline-block;
+  position: relative;
+  top: 193px;
+  left: 754px;
+  font-family: "Kumbh Sans";
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px lightgray;
+}
+.logo-name{
+  display: block;
+  position: absolute;
+  top: 30px;
+}
+.logo{
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 4.76px;
+  vertical-align: -1cap;
+  margin-left: 20px;
+}
+h1{
+  font-weight: 600;
+  display: inline-block;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.40);
+}
+.Gram{
+  color: rgb(255, 112, 0);
+}
+.sign-continue{
+  display: block;
+  position: absolute;
+  top: 100px;
+}
+h2{
+  font-size: 27px;
+  font-weight: 600;
+  margin-left: 23px;
+  margin-bottom: 0;
+}
+.to-continue{
+  font-size: 18px;
+  margin-left: 23px;
+  margin-top: 5px;
+}
+.google-facebook-x {
+  position: absolute;
+  display: block;
+  top: 240px;
+  margin-left: 18px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.google-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.facebook-logo {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+.x-logo {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px
+}
+.button-google {
+  background-color: white;
+  border: 0;
+  cursor:pointer;
+  height: 50px;
+  width: 50px;
+}
+.button-facebook {
+  background-color: white;
+  border: 0;
+  cursor:pointer;
+  height: 50px;
+  width: 50px;
+}
+.button-x {
+  background-color: white;
+  border: 0;
+  cursor:pointer;
+  height: 50px;
+  width: 50px;
+}
+.email {
+  margin-top: 320px;
+  margin-left: 25px;
+  position: absolute;
+  display: block;
+}
+.email-address-label {
+  margin-bottom: 150px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.email-address-form {
+  width: 410px;
+  height: 40px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: rgb(240, 240, 240);
+  font-size: 15px;
+  font-family: "Kumbh Sans";
+  text-indent: 15px;
+  margin-bottom: 30px;
+}
+.continue-button {
+  width: 410px;
+  height: 40px;
+  border-style: none;
+  border-radius: 5px;
+  font-family: "Kumbh Sans";
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #FF7000, #FC740A, #F48025, #F38128, #F2832C, #F1832D, #EE8837, #EA8D44, #E7924F, #E2985E, #E2995F);
+}
+.account-sign-up, .help-privacy-terms {
+  margin-top: 475px;
+  margin-left: 25px;
+  font-size: 14px;
+  display: inline-block;
+}
+.sign-up {
+  color: #FF7000;
+  margin-left: -3px;
+  font-family: "Kumbh Sans";
+  background-color: white;
+  border-style: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+.sign-up:hover {
+  text-decoration: underline;
+}
+.help-privacy-terms {
+  margin-left: 50px;
+  display: absolute;
+}
+.button-help {
+  width: 70px;
+  font-family: "Kumbh Sans";
+  font-size: 14px;
+  background-color: white;
+  border-style: none;
+  cursor: pointer;
+}
+.button-privacy {
+  width: 70px;
+  font-family: "Kumbh Sans";
+  font-size: 14px;
+  background-color: white;
+  border-style: none;
+  cursor: pointer;
+}
+.button-terms {
+  width: 70px;
+  font-family: "Kumbh Sans";
+  font-size: 14px;
+  background-color: white;
+  border-style: none;
+  cursor: pointer;
+}
+.button-help:hover {
+  text-decoration: underline;
+}
+.button-privacy:hover {
+  text-decoration: underline;
+}
+.button-terms:hover {
+  text-decoration: underline;
+}
